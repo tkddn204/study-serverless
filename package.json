@@ -1,31 +1,23 @@
 {
-  "name": "notes-app-client",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "react": "^16.9.0",
-    "react-dom": "^16.9.0",
-    "react-scripts": "3.0.1"
-  },
+  "name": "notes-app-api",
+  "version": "1.1.0",
+  "description": "A Node.js starter for the Serverless Framework with async/await and unit test support",
+  "main": "handler.js",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "test": "serverless-bundle test"
   },
-  "eslintConfig": {
-    "extends": "react-app"
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AnomalyInnovations/serverless-nodejs-starter.git"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "devDependencies": {
+    "aws-sdk": "^2.506.0",
+    "serverless-bundle": "^1.2.2",
+    "serverless-offline": "^5.3.3"
+  },
+  "dependencies": {
+    "uuid": "^3.3.2"
   }
 }
